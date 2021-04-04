@@ -1,0 +1,39 @@
+@use "../abstract" as *;
+.section-two {
+  padding: {
+    top: calcRem(30);
+    bottom: calcRem(60);
+  }
+}
+.about {
+  padding: calcRem(16) 0;
+}
+.title {
+  font-size: calcRem(26);
+  font-weight: 700;
+  padding: calcRem(40);
+  color: $font-color;
+  text-align: center;
+  &::after {
+    font-size: calcRem(1);
+    content: "";
+    background: $font-color;
+    padding: 0 calcRem(88);
+  }
+}
+.user__img {
+  text-align: center;
+  overflow: hidden;
+  width: calcRem(350);
+  height: calcRem(450);
+  background: {
+    image: url(../images/p.jpg);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  border: {
+    left: 10px solid $active-color;
+    bottom: 10px solid $active-color;
+  }
+}

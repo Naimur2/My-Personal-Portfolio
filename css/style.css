@@ -20,6 +20,12 @@ body {
   margin: auto;
 }
 
+.column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -52,11 +58,8 @@ body {
 }
 
 .user__description {
-  width: 60%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 8rem;
+  padding-left: 8rem;
   margin-bottom: 5rem;
 }
 
@@ -82,14 +85,9 @@ body {
   color: #d1d1d1;
 }
 
-.user__image {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-}
-
 .user__photo {
   height: 43.785rem;
+  width: auto;
 }
 
 .btn__hire {
@@ -114,6 +112,42 @@ body {
 }
 .btn__fill:is(:active) {
   background: #6e6c12fb;
+}
+
+.section-two {
+  padding-top: 1.89rem;
+  padding-bottom: 3.78rem;
+}
+
+.about {
+  padding: 1.008rem 0;
+}
+
+.title {
+  font-size: 1.638rem;
+  font-weight: 700;
+  padding: 2.52rem;
+  color: #fff;
+  text-align: center;
+}
+.title::after {
+  font-size: 0.063rem;
+  content: "";
+  background: #fff;
+  padding: 0 5.544rem;
+}
+
+.user__img {
+  text-align: center;
+  overflow: hidden;
+  width: 22.05rem;
+  height: 28.35rem;
+  background-image: url(../images/p.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-left: 10px solid #fe7e11;
+  border-bottom: 10px solid #fe7e11;
 }
 
 /*# sourceMappingURL=style.scss.map */

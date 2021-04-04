@@ -16,3 +16,8 @@ body {
   max-width: calcRem(1200);
   margin: auto;
 }
+.column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
